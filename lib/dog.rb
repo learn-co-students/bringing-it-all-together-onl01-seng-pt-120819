@@ -73,11 +73,11 @@ end
         id = dog_data[0]
         name =  dog_data[1]
         breed = dog_data[2]
-    new_dog = self.new(id:id, name:name, breed:breed)
+    new_instance_dog = self.new(id:id, name:name, breed:breed)
     else
-    new_dog = self.create(name:name, breed:breed)
+    new_instance_dog = self.create(name:name, breed:breed)
     end
-    new_dog
+    new_instance_dog
  end
 
  def self.find_by_name(name)
